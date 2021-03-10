@@ -35,10 +35,11 @@ spec:
     metadata:
       labels:
         app: go-server
+        version:  v1
     spec:
       serviceAccountName: go-server
       containers:
-      - name: go-server
+      - name: go-server-v1
         image: docker.io/cmwylie19/go-server-1
         imagePullPolicy: IfNotPresent
         ports:
